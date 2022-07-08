@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>sudoku</title>
+  <link rel="stylesheet" href="2.css" />
+</head>
+<body class="has_color_scheme">
+<div>
+	<!-- <h1> S U D O K U </h1> -->
+
+<table id="whole">
+  <tr id="row1" class="row">
+    <td id="r1c1" _row="1" _col="1" class="has_color_scheme cell row1 col1"></td>
+    <td id="r1c2" _row="1" _col="2" class="has_color_scheme cell row1 col2"></td>
+    <td id="r1c3" _row="1" _col="3" class="has_color_scheme cell row1 col3"></td>
+    <td id="r1c4" _row="1" _col="4" class="has_color_scheme cell row1 col4"></td>
+    <td id="r1c5" _row="1" _col="5" class="has_color_scheme cell row1 col5"></td>
+    <td id="r1c6" _row="1" _col="6" class="has_color_scheme cell row1 col6"></td>
+    <td id="r1c7" _row="1" _col="7" class="has_color_scheme cell row1 col7"></td>
+    <td id="r1c8" _row="1" _col="8" class="has_color_scheme cell row1 col8"></td>
+    <td id="r1c9" _row="1" _col="9" class="has_color_scheme cell row1 col9"></td>
+  </tr>
+  <tr id="row2" class="row">
+    <td id="r2c1" _row="2" _col="1" class="has_color_scheme cell row2 col1"></td>
+    <td id="r2c2" _row="2" _col="2" class="has_color_scheme cell row2 col2"></td>
+    <td id="r2c3" _row="2" _col="3" class="has_color_scheme cell row2 col3"></td>
+    <td id="r2c4" _row="2" _col="4" class="has_color_scheme cell row2 col4"></td>
+    <td id="r2c5" _row="2" _col="5" class="has_color_scheme cell row2 col5"></td>
+    <td id="r2c6" _row="2" _col="6" class="has_color_scheme cell row2 col6"></td>
+    <td id="r2c7" _row="2" _col="7" class="has_color_scheme cell row2 col7"></td>
+    <td id="r2c8" _row="2" _col="8" class="has_color_scheme cell row2 col8"></td>
+    <td id="r2c9" _row="2" _col="9" class="has_color_scheme cell row2 col9"></td>
+  </tr>
+  <tr id="row3" class="row">
+    <td id="r3c1" _row="3" _col="1" class="has_color_scheme cell row3 col1"></td>
+    <td id="r3c2" _row="3" _col="2" class="has_color_scheme cell row3 col2"></td>
+    <td id="r3c3" _row="3" _col="3" class="has_color_scheme cell row3 col3"></td>
+    <td id="r3c4" _row="3" _col="4" class="has_color_scheme cell row3 col4"></td>
+    <td id="r3c5" _row="3" _col="5" class="has_color_scheme cell row3 col5"></td>
+    <td id="r3c6" _row="3" _col="6" class="has_color_scheme cell row3 col6"></td>
+    <td id="r3c7" _row="3" _col="7" class="has_color_scheme cell row3 col7"></td>
+    <td id="r3c8" _row="3" _col="8" class="has_color_scheme cell row3 col8"></td>
+    <td id="r3c9" _row="3" _col="9" class="has_color_scheme cell row3 col9"></td>
+  </tr>
+  <tr id="row4" class="row">
+    <td id="r4c1" _row="4" _col="1" class="has_color_scheme cell row4 col1"></td>
+    <td id="r4c2" _row="4" _col="2" class="has_color_scheme cell row4 col2"></td>
+    <td id="r4c3" _row="4" _col="3" class="has_color_scheme cell row4 col3"></td>
+    <td id="r4c4" _row="4" _col="4" class="has_color_scheme cell row4 col4"></td>
+    <td id="r4c5" _row="4" _col="5" class="has_color_scheme cell row4 col5"></td>
+    <td id="r4c6" _row="4" _col="6" class="has_color_scheme cell row4 col6"></td>
+    <td id="r4c7" _row="4" _col="7" class="has_color_scheme cell row4 col7"></td>
+    <td id="r4c8" _row="4" _col="8" class="has_color_scheme cell row4 col8"></td>
+    <td id="r4c9" _row="4" _col="9" class="has_color_scheme cell row4 col9"></td>
+  </tr>
+  <tr id="row5" class="row">
+    <td id="r5c1" _row="5" _col="1" class="has_color_scheme cell row5 col1"></td>
+    <td id="r5c2" _row="5" _col="2" class="has_color_scheme cell row5 col2"></td>
+    <td id="r5c3" _row="5" _col="3" class="has_color_scheme cell row5 col3"></td>
+    <td id="r5c4" _row="5" _col="4" class="has_color_scheme cell row5 col4"></td>
+    <td id="r5c5" _row="5" _col="5" class="has_color_scheme cell row5 col5"></td>
+    <td id="r5c6" _row="5" _col="6" class="has_color_scheme cell row5 col6"></td>
+    <td id="r5c7" _row="5" _col="7" class="has_color_scheme cell row5 col7"></td>
+    <td id="r5c8" _row="5" _col="8" class="has_color_scheme cell row5 col8"></td>
+    <td id="r5c9" _row="5" _col="9" class="has_color_scheme cell row5 col9"></td>
+  </tr>
+  <tr id="row6" class="row">
+    <td id="r6c1" _row="6" _col="1" class="has_color_scheme cell row6 col1"></td>
+    <td id="r6c2" _row="6" _col="2" class="has_color_scheme cell row6 col2"></td>
+    <td id="r6c3" _row="6" _col="3" class="has_color_scheme cell row6 col3"></td>
+    <td id="r6c4" _row="6" _col="4" class="has_color_scheme cell row6 col4"></td>
+    <td id="r6c5" _row="6" _col="5" class="has_color_scheme cell row6 col5"></td>
+    <td id="r6c6" _row="6" _col="6" class="has_color_scheme cell row6 col6"></td>
+    <td id="r6c7" _row="6" _col="7" class="has_color_scheme cell row6 col7"></td>
+    <td id="r6c8" _row="6" _col="8" class="has_color_scheme cell row6 col8"></td>
+    <td id="r6c9" _row="6" _col="9" class="has_color_scheme cell row6 col9"></td>
+  </tr>
+  <tr id="row7" class="row">
+    <td id="r7c1" _row="7" _col="1" class="has_color_scheme cell row7 col1"></td>
+    <td id="r7c2" _row="7" _col="2" class="has_color_scheme cell row7 col2"></td>
+    <td id="r7c3" _row="7" _col="3" class="has_color_scheme cell row7 col3"></td>
+    <td id="r7c4" _row="7" _col="4" class="has_color_scheme cell row7 col4"></td>
+    <td id="r7c5" _row="7" _col="5" class="has_color_scheme cell row7 col5"></td>
+    <td id="r7c6" _row="7" _col="6" class="has_color_scheme cell row7 col6"></td>
+    <td id="r7c7" _row="7" _col="7" class="has_color_scheme cell row7 col7"></td>
+    <td id="r7c8" _row="7" _col="8" class="has_color_scheme cell row7 col8"></td>
+    <td id="r7c9" _row="7" _col="9" class="has_color_scheme cell row7 col9"></td>
+  </tr>
+  <tr id="row8" class="row">
+    <td id="r8c1" _row="8" _col="1" class="has_color_scheme cell row8 col1"></td>
+    <td id="r8c2" _row="8" _col="2" class="has_color_scheme cell row8 col2"></td>
+    <td id="r8c3" _row="8" _col="3" class="has_color_scheme cell row8 col3"></td>
+    <td id="r8c4" _row="8" _col="4" class="has_color_scheme cell row8 col4"></td>
+    <td id="r8c5" _row="8" _col="5" class="has_color_scheme cell row8 col5"></td>
+    <td id="r8c6" _row="8" _col="6" class="has_color_scheme cell row8 col6"></td>
+    <td id="r8c7" _row="8" _col="7" class="has_color_scheme cell row8 col7"></td>
+    <td id="r8c8" _row="8" _col="8" class="has_color_scheme cell row8 col8"></td>
+    <td id="r8c9" _row="8" _col="9" class="has_color_scheme cell row8 col9"></td>
+  </tr>
+  <tr id="row9" class="row">
+    <td id="r9c1" _row="9" _col="1" class="has_color_scheme cell row9 col1"></td>
+    <td id="r9c2" _row="9" _col="2" class="has_color_scheme cell row9 col2"></td>
+    <td id="r9c3" _row="9" _col="3" class="has_color_scheme cell row9 col3"></td>
+    <td id="r9c4" _row="9" _col="4" class="has_color_scheme cell row9 col4"></td>
+    <td id="r9c5" _row="9" _col="5" class="has_color_scheme cell row9 col5"></td>
+    <td id="r9c6" _row="9" _col="6" class="has_color_scheme cell row9 col6"></td>
+    <td id="r9c7" _row="9" _col="7" class="has_color_scheme cell row9 col7"></td>
+    <td id="r9c8" _row="9" _col="8" class="has_color_scheme cell row9 col8"></td>
+    <td id="r9c9" _row="9" _col="9" class="has_color_scheme cell row9 col9"></td>
+  </tr>
+</table>
+
+<!-- toolbar -->
+<button type="button" class="button btn_digit btn_digit_normal">1</button>
+<button type="button" class="button btn_digit btn_digit_normal">2</button>
+<button type="button" class="button btn_digit btn_digit_normal">3</button>
+<button type="button" class="button btn_digit btn_digit_normal">4</button>
+<button type="button" class="button btn_digit btn_digit_normal">5</button>
+<br/>
+<button type="button" class="button btn_digit btn_digit_normal">6</button>
+<button type="button" class="button btn_digit btn_digit_normal">7</button>
+<button type="button" class="button btn_digit btn_digit_normal">8</button>
+<button type="button" class="button btn_digit btn_digit_normal">9</button>
+<button type="button" id="btn_xy" class="button">XY</button>
+<br/>
+<button type="button" id="btn_pencil" class="button btn_pencil">Pencil</button>
+
+</div>
+
+<hr/>
+
+<div>
+	<textarea id="solving_progress_text" rows="16" cols="80" readonly="true"></textarea>
+</div>
+
+<!-- hidden elements for script -->
+<div style="display: none">
+		<!--
+			this is template for candidate cell, the id will be replaced to 'rXcY_candidate',
+			and the td can be found by calling document.querySelector('#rXcY_candidate #candidate_N')
+		-->
+		<table id="candidate_table_template" class="has_color_scheme small cell_candidates">
+			<tr>
+				<td id="candidate_1"></td>
+				<td id="candidate_2"></td>
+				<td id="candidate_3"></td>
+			</tr>
+			<tr>
+				<td id="candidate_4"></td>
+				<td id="candidate_5"></td>
+				<td id="candidate_6"></td>
+			</tr>
+			<tr>
+				<td id="candidate_7"></td>
+				<td id="candidate_8"></td>
+				<td id="candidate_9"></td>
+			</tr>
+		</table>
+
+		<!--
+			elements for marking cells. all are of z-index.
+		-->
+		<div id="mark_a_template" class="mark_a"></div>
+		<div id="mark_b_template" class="mark_b"></div>
+</div>
+
+  <script src="2pre.js"></script>
+  <script src="2.js"></script>
+</body>
+</html>
